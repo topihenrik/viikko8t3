@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/addMoneyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:onClick="addMoney"
+        android:text="Add money"
+        app:layout_constraintEnd_toStartOf="@+id/returnMoneyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentMoney" />
+
+    <Button
+        android:id="@+id/returnMoneyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="returnMoney"
+        android:text="Return money"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentMoney" />
+
+    <Button
+        android:id="@+id/product1BuyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="100dp"
+        android:onClick="buy1"
+        android:text="Buy 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageConsole" />
+
+    <TextView
+        android:id="@+id/currentMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Current money: 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/product2BuyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:text="Buy 2"
+        android:onClick="buy2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product1BuyButton" />
+
+    <Button
+        android:id="@+id/product3BuyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:text="Buy 3"
+        android:onClick="buy3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product2BuyButton" />
+
+    <Button
+        android:id="@+id/product4BuyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:text="Buy 4"
+        android:onClick="buy4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product3BuyButton" />
+
+    <TextView
+        android:id="@+id/messageConsole"
+        android:layout_width="177dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="30dp"
+        android:text="Message console"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addMoneyButton" />
+
+    <TextView
+        android:id="@+id/product1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:text="Product 1"
+        app:layout_constraintEnd_toStartOf="@+id/product1BuyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageConsole" />
+
+    <TextView
+        android:id="@+id/product2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="100dp"
+        android:text="Product 2"
+        app:layout_constraintEnd_toStartOf="@+id/product2BuyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product1Name" />
+
+    <TextView
+        android:id="@+id/product3Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="100dp"
+        android:text="Product 3"
+        app:layout_constraintEnd_toStartOf="@+id/product3BuyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product2Name" />
+
+    <TextView
+        android:id="@+id/product4Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="100dp"
+        android:text="Product 4"
+        app:layout_constraintEnd_toStartOf="@+id/product4BuyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product3Name" />
+
+    <Button
+        android:id="@+id/product5BuyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:text="Buy 5"
+        android:onClick="buy5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product4BuyButton" />
+
+    <TextView
+        android:id="@+id/product5Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Product 5"
+        app:layout_constraintEnd_toStartOf="@+id/product5BuyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product4Name" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="91dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="25dp"
+        android:max="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentMoney" />
+
+    <TextView
+        android:id="@+id/seekBarNumber"
+        android:layout_width="18dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/currentMoney" />
+</androidx.constraintlayout.widget.ConstraintLayout>
