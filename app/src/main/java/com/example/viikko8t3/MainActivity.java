@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity {
         etProduct1Name = findViewById(R.id.product1Name);
         etProduct1Name.setText(bottle.getArrayElementName(1) + " " + bottle.getArrayElementSize(1));
         etProduct2Name = findViewById(R.id.product2Name);
-        etProduct2Name.setText(bottle.getArrayElementName(1) + " " + bottle.getArrayElementSize(2));
+        etProduct2Name.setText(bottle.getArrayElementName(2) + " " + bottle.getArrayElementSize(2));
         etProduct3Name = findViewById(R.id.product3Name);
-        etProduct3Name.setText(bottle.getArrayElementName(1) + " " + bottle.getArrayElementSize(3));
+        etProduct3Name.setText(bottle.getArrayElementName(3) + " " + bottle.getArrayElementSize(3));
         etProduct4Name = findViewById(R.id.product4Name);
-        etProduct4Name.setText(bottle.getArrayElementName(1) + " " + bottle.getArrayElementSize(4));
+        etProduct4Name.setText(bottle.getArrayElementName(4) + " " + bottle.getArrayElementSize(4));
         etProduct5Name = findViewById(R.id.product5Name);
-        etProduct5Name.setText(bottle.getArrayElementName(1) + " " + bottle.getArrayElementSize(5));
+        etProduct5Name.setText(bottle.getArrayElementName(5) + " " + bottle.getArrayElementSize(5));
         seekBar = findViewById(R.id.seekBar);
         seekBarNumber = findViewById(R.id.seekBarNumber);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
