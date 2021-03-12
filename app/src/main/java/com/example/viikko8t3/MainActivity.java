@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     public void addMoney(View view) {
         bottle.addMoney(Integer.parseInt(seekBarNumber.getText().toString()));
         seekBar.setProgress(0);
-        etCurrentMoney.setText(String.valueOf(bottle.getMoney()));
+        etCurrentMoney.setText("Current money: " + String.valueOf(bottle.getMoney()));
         etMessageConsole.setText("Klink! Added more money!");
         return;
     }
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
     public void buyBottle(int choice) {
         int errCode = bottle.buyBottle(choice);
         if (errCode == 0) {
-            etCurrentMoney.setText(String.valueOf(bottle.getMoney()));
+            etCurrentMoney.setText("Current money: " + String.valueOf(bottle.getMoney()));
             etMessageConsole.setText("KACHUNK! " + bottle.getArrayElementName(choice) + " came out of the dispenser!");
             bottle.removeArray(choice);
             etProduct1Name.setText(bottle.getArrayElementName(1) + " " + bottle.getArrayElementSize(1));
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
     public void returnMoney(View view) {
         etMessageConsole.setText("Klink klink. Money came out! You got " + String.format("%.2f", bottle.getMoney()) + "€ back");
         bottle.returnMoney();
-        etCurrentMoney.setText(String.valueOf(bottle.getMoney()));
+        etCurrentMoney.setText("Current money: " + String.valueOf(bottle.getMoney()));
         return;
     }
 
